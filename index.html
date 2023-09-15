@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Lato:wght@300;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cc54d24c7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <input id="searchInputWeather" placeholder="Insira o nome de uma cidade">
+            <button id="checkWeather"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="weather-main-informations">
+            <img id="weather-image">
+            <h2 id="temperature"></h2>
+            <h3 id="city-name"></h3>
+        </div>
+
+        <div class="weather-details">
+            <div class="column">
+                <img src="./images/humidity.png">
+                <h3 id="humidity"></h3>
+                <p>Humidade</p>
+            </div>
+            
+            <div class="column">
+                <img src="./images/wind.png">
+                <h3 id="wind"></h3>
+                <p>Vel. vento</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
